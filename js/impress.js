@@ -791,6 +791,15 @@
         
 })(document, window);
 
+var videoStep = document.getElementById("video-step");
+var video = document.getElementById("video");
+videoStep.addEventListener("impress:stepenter", function() {
+    video.play();
+}, false);
+videoStep.addEventListener("impress:stepleave", function() {
+    video.pause();
+}, false);
+
 // THAT'S ALL FOLKS!
 //
 // Thanks for reading it all.
